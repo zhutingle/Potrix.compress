@@ -17,5 +17,5 @@ Write a target in the build.xml before war.Like this:
 		<classpath path="${compress}/potrix.compress.jar" />
 	</java>
 </target>
-	
+
 Then it will compress files that you want.
