@@ -11,11 +11,11 @@ Add the compress folder to you web project.
 Make the compress.properties right in your projct.
 Write a target in the build.xml before war.Like this:
 
-  <target name="compress" depends="copy">
-		<java fork="false" classname="potrix.compress.Main" failonerror="true">
-			<classpath path="${compress}/compiler.jar" />
-			<classpath path="${compress}/potrix.compress.jar" />
-		</java>
-	</target>
+<target name="compress" depends="copy">
+	<java fork="false" classname="potrix.compress.Main" failonerror="true">
+		<classpath path="${compress}/compiler.jar" />
+		<classpath path="${compress}/potrix.compress.jar" />
+	</java>
+</target>
 	
 Then it will compress files that you want.
